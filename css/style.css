@@ -15,9 +15,10 @@ body{
     
 }
 
-img{
+#capa{
     width: 100%;  
     margin-bottom: 40px;
+    
 }
 
 .container{
@@ -98,12 +99,10 @@ color: #fdfdfd;
 
 
 section{
-    width: 550px;
+    width: 100%;
     height: auto;
-    margin: auto;
-    background-color: #ACC8FF;
-    padding: 10px;
-    border-radius: 10px;
+    margin: auto ;
+    
     font-size: 1em;
     
 }
@@ -119,14 +118,24 @@ section a{
 .sobre{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
+    background-color: #ACC8FF;
+    padding: 10px;
+    border-radius: 10px;
     
     
 }
 .sobre p{
     padding: 10px;
+    
 }
+.sobre img{
+    width: 100%;  
+    margin-bottom: 40px;
+    border-radius: 10px
+}
+
 
 /*Medidas responsivas*/
 @media (min-width: 200px){
