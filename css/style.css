@@ -133,7 +133,7 @@ color: #fdfdfd;
 .texto{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin:  5dvh;
     height: 100%;
     width: 50%;
     justify-content: center;
@@ -159,6 +159,54 @@ color: #fdfdfd;
     border-radius: 15px;
 }
 
+.cursos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('../images/matese-fields-pvHma684eEI-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    justify-content: center;
+    color: #00256F;
+    
+}
+.cursos h1{
+    font-weight: bolder;
+    padding-top: 10px;
+    
+}
+
+.curso{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: #e2ebff;
+}
+
+.curso div{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: #00256F;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    
+    
+}
+.curso h2{
+margin-top: 20px;
+}
+.curso p{
+    margin: 20px;
+}
+
+
+
+
+
 
 
 
@@ -183,6 +231,12 @@ color: #fdfdfd;
     .sections h1{
         font-size: 1em;
     }
+    .curso{
+        flex-direction: column;
+    }
+    .curso{
+        background-size: contain;
+    }
 }
 
 @media (min-width: 500px){
@@ -205,6 +259,12 @@ color: #fdfdfd;
     .sections h1{
         font-size: 1.5em;
     }
+    .curso{
+        flex-direction: column;
+    }
+    .curso{
+        background-size: cover;
+    }
 }
 
 @media (min-width: 700px){
@@ -224,5 +284,14 @@ color: #fdfdfd;
     }
     .sections p{
         font-size: 1em;
+    }
+    .sections h1{
+        font-size: 2em;
+    }
+    .curso{
+        flex-direction: row;
+    }
+    .curso{
+        background-size: cover;
     }
 }
