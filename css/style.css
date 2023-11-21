@@ -126,8 +126,6 @@ color: #fdfdfd;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .texto{
@@ -148,16 +146,19 @@ color: #fdfdfd;
 #imagem {
     display: flex;
     width: 50%;
-    padding: 30px;
     
    
 }
 
 #imagem img{
     width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
+   
+    
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    
+    
+}   
 
 .cursos{
     display: flex;
@@ -166,12 +167,15 @@ color: #fdfdfd;
     background-image: url('../images/matese-fields-pvHma684eEI-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     height: auto;
     justify-content: center;
     color: #00256F;
+    transition: 0.3s;
+    
     
 }
+
 .cursos h1{
     font-weight: bolder;
     padding-top: 10px;
@@ -189,24 +193,27 @@ color: #fdfdfd;
     display: flex;
     flex-direction: column;
     width: auto;
-    background-color: #00256F;
+    background-color: #00256fe0;
     margin: 10px;
     margin-bottom: 20px;
     border-radius: 25px;
+    transition: 0.3s;
     
-    
+}
+.curso div:hover{
+    transform: scale(1.1);
+    background-color: #00256f ;
 }
 .curso h2{
 margin-top: 20px;
+font-size: 1.8em;
 }
 .curso p{
-    margin: 20px;
+    margin: 20px;   
+    text-align: center;
+    padding-bottom: 20px;
+   
 }
-
-
-
-
-
 
 
 
@@ -231,12 +238,18 @@ margin-top: 20px;
     .sections h1{
         font-size: 1em;
     }
+    
+    
     .curso{
         flex-direction: column;
     }
-    .curso{
-        background-size: contain;
+    .curso h2{
+        font-size: 1em;
     }
+    .sobre{
+        flex-direction: column;
+    }
+    
 }
 
 @media (min-width: 500px){
@@ -262,12 +275,15 @@ margin-top: 20px;
     .curso{
         flex-direction: column;
     }
-    .curso{
-        background-size: cover;
+    .curso h2{
+        font-size: 1.4em;
+    }
+    .sobre{
+        flex-direction: column;
     }
 }
 
-@media (min-width: 700px){
+@media (min-width: 750px){
     .container{
         height: 80px;
     }
@@ -291,7 +307,10 @@ margin-top: 20px;
     .curso{
         flex-direction: row;
     }
-    .curso{
-        background-size: cover;
+    .curso h2{
+        font-size: 1.8em;
+    }
+    .sobre{
+        flex-direction: row;
     }
 }
