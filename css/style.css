@@ -152,10 +152,7 @@ color: #fdfdfd;
 
 #imagem img{
     width: 100%;
-   
     
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
     
     
 }   
@@ -214,6 +211,56 @@ font-size: 1.8em;
     padding-bottom: 20px;
    
 }
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #00256F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #e2ebff;
+}
+#contato {
+    cursor: pointer;
+    background-color: white;
+}
+#contato ul{
+    list-style: none;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: #00256F;
+    
+    margin: 10px;
+    width: 300px;
+}
+.formulario h2{
+    text-align: center;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#nome{
+    border-bottom: #00256F;
+    margin-bottom: 10px;
+}
+
+#email{
+    border-bottom: 3px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -249,7 +296,10 @@ font-size: 1.8em;
     .sobre{
         flex-direction: column;
     }
-    
+    #imagem img{
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
 }
 
 @media (min-width: 500px){
@@ -312,5 +362,12 @@ font-size: 1.8em;
     }
     .sobre{
         flex-direction: row;
+    }
+    #imagem img{
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 }
